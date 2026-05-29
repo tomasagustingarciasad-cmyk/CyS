@@ -10,7 +10,7 @@ function Hd = Filtro_hamming
 % All frequency values are in Hz.
 Fs = 250;  % Sampling Frequency
 
-N    =10;       % Order
+N    =100;       % Order
 Fc   = 15;       % Cutoff Frequency
 flag = 'scale';  % Sampling Flag
 
