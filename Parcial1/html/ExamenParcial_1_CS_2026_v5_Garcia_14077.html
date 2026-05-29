@@ -1,0 +1,713 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      -->
+<title>ExamenParcial_1_CS_2026_v5</title>
+<meta name="generator" content="MATLAB 23.2">
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+<meta name="DC.date" content="2026-04-28">
+<meta name="DC.source" content="ExamenParcial_1_CS_2026_v5.m">
+<style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; }
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+span.typesection { color:#A0522D }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style>
+</head>
+<body>
+<div class="content">
+<h2>Contents</h2>
+<div>
+<ul>
+<li>
+<a href="#2">APELLIDO, NOMBRE: LEGAJO</a>
+</li>
+<li>
+<a href="#3">Garcia Sad, Tomas Agustin: 14077</a>
+</li>
+<li>
+<a href="#4">PARCIAL I: CONTROL Y SISTEMAS</a>
+</li>
+<li>
+<a href="#5">Contexto</a>
+</li>
+<li>
+<a href="#6">Objetivo</a>
+</li>
+<li>
+<a href="#7">Criterio de evaluai&oacute;n</a>
+</li>
+<li>
+<a href="#8">Tareas a desarrollar</a>
+</li>
+<li>
+<a href="#9">1. An&aacute;lisis Previo de los Datos</a>
+</li>
+<li>
+<a href="#14">2. Pre-Proceso</a>
+</li>
+<li>
+<a href="#18">3. Generar serie final y gr&aacute;ficos</a>
+</li>
+<li>
+<a href="#19">3. Generar serie final y gr&aacute;ficos</a>
+</li>
+<li>
+<a href="#20">4. Validaci&oacute;n de la respuesta</a>
+</li>
+<li>
+<a href="#24">5. Tasa de Cambio (Derivada) y Punto Fijo</a>
+</li>
+</ul>
+</div>
+<pre class="codeinput">clc, clear, close <span class="string">all</span>;
+</pre>
+<h2 id="2">APELLIDO, NOMBRE: LEGAJO</h2>
+<h2 id="3">Garcia Sad, Tomas Agustin: 14077</h2>
+<h2 id="4">PARCIAL I: CONTROL Y SISTEMAS</h2>
+<h2 id="5">Contexto</h2>
+<p>Est&aacute;s analizando la cantidad de turnos atendidos en un consultorio m&eacute;dico. El sistema registra diariamente el n&uacute;mero de pacientes atendidos, generando una serie temporal discreta x[k], donde cada muestra representa un d&iacute;a.</p>
+<h2 id="6">Objetivo</h2>
+<p>El equipo de gesti&oacute;n solicita elaborar un reporte resumido con un <b>valor representativo cada 10 d&iacute;as</b>, con el objetivo de facilitar el monitoreo operativo y la planificaci&oacute;n de recursos a largo plazo, eliminando las fluctuaciones diarias irrelevantes para la tendencia general anual.</p>
+<h2 id="7">Criterio de evaluai&oacute;n</h2>
+<p>
+<i>&ldquo;No se evaluar&aacute; &uacute;nicamente el resultado num&eacute;rico, sino la calidad del razonamiento t&eacute;cnico y la justificaci&oacute;n de las decisiones de dise&ntilde;o.&rdquo;</i>
+</p>
+<p>
+<i>"Cuide la presentaci&oacute;n, escala, colores, t&iacute;tulos y leyendas de sus gr&aacute;ficos para hacerlos lo m&aacute;s legible posible para la evaluaci&oacute;n."</i>
+</p>
+<h2 id="8">Tareas a desarrollar</h2>
+<p>Dise&ntilde;ar e implementar en MATLAB un script que permita reducir la serie temporal original. La salida debe ser una nueva serie reducida que entregue un valor representativo cada 10 d&iacute;as.</p>
+<h2 id="9">1. An&aacute;lisis Previo de los Datos</h2>
+<p>Seleccione y aplique comandos de MATLAB para estudiar la se&ntilde;al original y extraer la informaci&oacute;n relevante.</p>
+<pre class="codeinput">
+<span class="comment">%------</span>
+x = load(<span class="string">'datos_turnos.txt'</span>);
+x = x(:);
+N = length(x);
+k = 0:N-1;
+
+figure;
+plot(k, x, <span class="string">'LineWidth'</span>, 1.5);
+title(<span class="string">'Serie Temporal Original: Turnos por D&iacute;a'</span>);
+xlabel(<span class="string">'D&iacute;as (k)'</span>);
+ylabel(<span class="string">'Cantidad de Pacientes'</span>);
+grid <span class="string">on</span>;
+xlim([0, N]); <span class="comment">% Ajusta el eje X</span>
+
+<span class="comment">% --- An&aacute;lisis en el Dominio de la Frecuencia (F&iacute;sica) ---</span>
+Fs = 1;                           <span class="comment">% Frecuencia de muestreo: 1 muestra/d&iacute;a</span>
+X_f = fft(x);                     <span class="comment">% Transformada R&aacute;pida de Fourier</span>
+X_mag = abs(fftshift(X_f)) / N;   <span class="comment">% Espectro de magnitud centrado y normalizado</span>
+
+<span class="comment">% Creaci&oacute;n del eje de frecuencias f&iacute;sicas (ciclos/d&iacute;a)</span>
+f = linspace(-Fs/2, Fs/2 - Fs/N, N);
+
+figure;
+plot(f, X_mag, <span class="string">'r'</span>, <span class="string">'LineWidth'</span>, 1.2);
+title(<span class="string">'Espectro de Magnitud de la Se&ntilde;al Original'</span>);
+xlabel(<span class="string">'Frecuencia f (ciclos/d&iacute;a)'</span>);
+ylabel(<span class="string">'Magnitud |X(f)|'</span>);
+xlim([0 Fs/2]); <span class="comment">% Acotamos hasta la frecuencia de Nyquist (0.5 ciclos/d&iacute;a)</span>
+grid <span class="string">on</span>;
+figure;
+plot(f, X_mag, <span class="string">'r'</span>, <span class="string">'LineWidth'</span>, 1.2);
+title(<span class="string">'Espectro de Magnitud de la Se&ntilde;al Original'</span>);
+xlabel(<span class="string">'Frecuencia f (ciclos/d&iacute;a)'</span>);
+ylabel(<span class="string">'Magnitud |X(f)|'</span>);
+xlim([0 0.2]); <span class="comment">% Acotamos hasta la frecuencia de Nyquist (0.5 ciclos/d&iacute;a)</span>
+grid <span class="string">on</span>;
+<span class="comment">%------</span>
+</pre>
+<img vspace="5" hspace="5" src="ExamenParcial_1_CS_2026_v5_01.png" alt=""> <img vspace="5" hspace="5" src="ExamenParcial_1_CS_2026_v5_02.png" alt=""> <img vspace="5" hspace="5" src="ExamenParcial_1_CS_2026_v5_03.png" alt=""> <p>
+<b>1.1 Justifique brevemente la elecci&oacute;n de dichas herramientas</b>
+</p>
+<pre class="codeinput">
+<span class="comment">% Con la base de utilizar el archivo 'datos_turnos.txt' como base de los</span>
+<span class="comment">% datos, se puso con forma de vector columna por si hubo problema al cargar</span>
+<span class="comment">% la informacion. Luego se genero un vector de tiempo con la longitud de la</span>
+<span class="comment">% cantidad de datos con los cuales se cuenta. Finalmente Se imprimi&oacute; esta</span>
+<span class="comment">% informacion en un gr&aacute;fico que permita ver la cantidad de pasientes en</span>
+<span class="comment">% funcion del d&iacute;a. Tambien se realiz&oacute; un gr&aacute;fico en el dominio de la</span>
+<span class="comment">% frecuencia para mayor obtenci&oacute;n de informacion</span>
+</pre>
+<p>
+<b>1.2 Explique los resultados obtenidos del an&aacute;lisis</b>
+</p>
+<pre class="codeinput">
+<span class="comment">% Se puede observar en la gr&aacute;fica la informaci&oacute;n de cuantas personas se</span>
+<span class="comment">% atienden por d&iacute;a. Esto parece tener una forma peoriodica, con un periodo</span>
+<span class="comment">% de aproximadamente 1 a&ntilde;o. Quiero tener la informacion cada 10 d&iacute;as previo</span>
+<span class="comment">% a su desarrollo.</span>
+</pre>
+<p>
+<b>1.3 Mencione qu&eacute; informaci&oacute;n le resulta relevante y &uacute;til para la soluci&oacute;n.</b>
+</p>
+<pre class="codeinput">
+<span class="comment">% La informaci&oacute;n mas relevante en este caso es que se desea tener la informacion cada 10 d&iacute;as.</span>
+<span class="comment">% Otro aspecto importante es que la nueva frecuencia m&aacute;xima representable (Nyquist)</span>
+<span class="comment">% ser&aacute; fc = 0.05 ciclos/d&iacute;a (Fs / 2M).</span>
+<span class="comment">%El espectro revela componentes de alta frecuencia (fluctuaciones diarias) superiores a fc.</span>
+<span class="comment">% Esto confirma la necesidad de aplicar un filtro pasabajos con frecuencia de corte en 0.05 antes</span>
+<span class="comment">% de submuestrear</span>
+</pre>
+<h2 id="14">2. Pre-Proceso</h2>
+<p>
+<b>Proceda a realizar el tratamiento de la se&ntilde;al</b>
+</p>
+<pre class="codeinput">
+<span class="comment">%Primero procesamos la se&ntilde;al con filtro antialiasing</span>
+
+N_ma = 10;                             <span class="comment">% Tama&ntilde;o de la ventana</span>
+b_xr = (1/N_ma) * ones(1, N_ma);       <span class="comment">%</span>
+a_xr = 1;                              <span class="comment">%</span>
+
+<span class="comment">% Aplicaci&oacute;n del filtro</span>
+x_filtrada = filter(b_xr, a_xr, x);
+fs_new =Fs/N_ma;
+
+<span class="comment">% 1. Decimaci&oacute;n de la se&ntilde;al filtrada usando tu estructura</span>
+x_reducida = x_filtrada(1:round(Fs/fs_new):end);
+k_reducido = k(1:round(Fs/fs_new):end);
+
+
+<span class="comment">%-----------------------------------------</span>
+</pre>
+<p>
+<b>2.1 Comente brevemente sobre el m&eacute;todo elegido para el pre-procesamiento.</b>
+</p>
+<pre class="codeinput">
+<span class="comment">% Para el preprocesamiento se eligio utilizar un filtro pasa bajo para</span>
+<span class="comment">% obtener los valores mas representativos de la se&ntilde;al ya que de esta manera</span>
+<span class="comment">% se filtran los valores de alta frecuencia como la variaci&oacute;n d&iacute;a a dia.</span>
+</pre>
+<p>
+<b>2.2 &iquest;Por qu&eacute; dicha t&eacute;cnica es necesaria y adecuada para este problema espec&iacute;fico? (considerando el contenido frecuencial).</b>
+</p>
+<pre class="codeinput">
+<span class="comment">% Esto es necesario debido a que la variacion d&iacute;a a dia es bastante alta, y</span>
+<span class="comment">% como queremos muestrear cada 10 d&iacute;as, esta variacion es muy poca</span>
+<span class="comment">% representativa. Por lo que se intenta eliminar ese tipo de "ruido"</span>
+</pre>
+<p>
+<b>2.3 Mencione los criterios utilizados para definir los par&aacute;metros del sistema de procesamiento.</b>
+</p>
+<pre class="codeinput">
+<span class="comment">% El principal criterio utilizado es el de intentar descartar la frecuencia</span>
+<span class="comment">% alta mediante un filtro de media movil, haciendo uso para este del mismo</span>
+<span class="comment">% par&aacute;metro que se utilizar&aacute; al diezmar. Esto permite reducir la alta</span>
+<span class="comment">% frecuencia y obtener una se&ntilde;al mas limpia. Mediante diversas pruebas,</span>
+<span class="comment">% este filtro es el que dio mejor resultado comparado con los de ventana en</span>
+<span class="comment">% el dominio de la frecuencia</span>
+</pre>
+<h2 id="18">3. Generar serie final y gr&aacute;ficos</h2>
+<p>A partir del procesamiento anterior, generar la serie final y grafiquela en el tiempo y la frecuencia. Asegurarse de que la alineaci&oacute;n temporal sea correcta respecto a la se&ntilde;al original.</p>
+<h2 id="19">3. Generar serie final y gr&aacute;ficos</h2>
+<p>A partir del procesamiento anterior, generar la serie final y grafiquela en el tiempo y la frecuencia. Asegurarse de que la alineaci&oacute;n temporal sea correcta respecto a la se&ntilde;al original.</p>
+<pre class="codeinput">
+<span class="comment">% --- 3.1 Gr&aacute;ficos en el Dominio del Tiempo ---</span>
+figure;
+hold <span class="string">on</span>;
+plot(k, x, <span class="string">'c'</span>, <span class="string">'LineWidth'</span>, 1, <span class="string">'DisplayName'</span>, <span class="string">'Original'</span>);
+plot(k_reducido, x_reducida, <span class="string">'r-'</span>, <span class="string">'LineWidth'</span>, 2, <span class="string">'DisplayName'</span>, <span class="string">'Reducida'</span>);
+
+title(<span class="string">'Comparaci&oacute;n: Serie Temporal Original vs. Reducida'</span>);
+xlabel(<span class="string">'D&iacute;as (k)'</span>);
+ylabel(<span class="string">'Cantidad de Pacientes'</span>);
+legend(<span class="string">'show'</span>);
+grid <span class="string">on</span>;
+xlim([0, N]);
+hold <span class="string">off</span>;
+
+<span class="comment">% --- 3.2 Gr&aacute;ficos en el Dominio de la Frecuencia (Se&ntilde;al Reducida) ---</span>
+N_red = length(x_reducida);
+X_f_red = fft(x_reducida);
+X_mag_red = abs(fftshift(X_f_red)) / N_red;
+
+<span class="comment">% Eje de frecuencias para la nueva se&ntilde;al (llega hasta fs_new/2 = 0.05)</span>
+f_red = linspace(-fs_new/2, fs_new/2 - fs_new/N_red, N_red);
+
+figure;
+plot(f_red, X_mag_red, <span class="string">'r'</span>, <span class="string">'LineWidth'</span>, 1.5);
+title(<span class="string">'Espectro de Magnitud de la Se&ntilde;al Reducida'</span>);
+xlabel(<span class="string">'Frecuencia f (ciclos/d&iacute;a)'</span>);
+ylabel(<span class="string">'Magnitud |X_{red}(f)|'</span>);
+xlim([0 fs_new/2]); <span class="comment">% Mostramos hasta el nuevo l&iacute;mite de Nyquist</span>
+grid <span class="string">on</span>;
+</pre>
+<img vspace="5" hspace="5" src="ExamenParcial_1_CS_2026_v5_04.png" alt=""> <img vspace="5" hspace="5" src="ExamenParcial_1_CS_2026_v5_05.png" alt=""> <h2 id="20">4. Validaci&oacute;n de la respuesta</h2>
+<p>Comparar su soluci&oacute;n con al menos una alternativa que considere incorrecta o sub&oacute;ptima para validar por contraste la suya.</p>
+<pre class="codeinput">N_ma2 = 2;                             <span class="comment">% Tama&ntilde;o de la ventana</span>
+b_xr2 = (1/N_ma2) * ones(1, N_ma2);
+a_xr2 = 1;
+
+<span class="comment">% Aplicaci&oacute;n del filtro</span>
+x_filtrada2 = filter(b_xr2, a_xr2, x);
+fs_new2 =Fs/10;
+
+<span class="comment">% 1. Decimaci&oacute;n de la se&ntilde;al filtrada usando tu estructura</span>
+x_reducida2 = x_filtrada2(1:round(Fs/fs_new2):end);
+k_reducido = k(1:round(Fs/fs_new2):end);
+
+<span class="comment">% --- Gr&aacute;ficos en el Dominio del Tiempo2 ---</span>
+figure;
+hold <span class="string">on</span>;
+plot(k, x, <span class="string">'c'</span>, <span class="string">'LineWidth'</span>, 1, <span class="string">'DisplayName'</span>, <span class="string">'Original'</span>);
+plot(k_reducido, x_reducida2, <span class="string">'r-'</span>, <span class="string">'LineWidth'</span>, 2, <span class="string">'DisplayName'</span>, <span class="string">'Reducida'</span>);
+
+title(<span class="string">'Filtro debil'</span>);
+xlabel(<span class="string">'D&iacute;as (k)'</span>);
+ylabel(<span class="string">'Cantidad de Pacientes'</span>);
+legend(<span class="string">'show'</span>);
+grid <span class="string">on</span>;
+xlim([0, N]);
+hold <span class="string">off</span>;
+</pre>
+<img vspace="5" hspace="5" src="ExamenParcial_1_CS_2026_v5_06.png" alt=""> <p>
+<b>4.1 Qu&eacute; efectos negativos produce la alternativa sub&oacute;ptima (en el dominio del tiempo y/o frecuencia).</b>
+</p>
+<pre class="codeinput">
+<span class="comment">% Se eligio un filtro de media movil con menor atenuacion. Al promediar</span>
+<span class="comment">% valores por sobre los que se decimaran, la amplitud de frecuencias altas</span>
+<span class="comment">% no se ve reducida, indicando que el filtro no permite ver informacion que puede ser</span>
+<span class="comment">% valiosa</span>
+<span class="comment">% Otra opcion es elegir un filtro de media movil con mayor atenuacion. Al promediar</span>
+<span class="comment">% valores por sobre los que se decimaran, la amplitud de frecuencias bajas</span>
+<span class="comment">% se ve reducida, indicando que el filtro no permite ver informacion que puede ser</span>
+<span class="comment">% valiosa. Ademas, esto puede generar una respuesta con demasiado retardo</span>
+<span class="comment">% en el tiempo</span>
+</pre>
+<p>
+<b>4.2 Por qu&eacute; su soluci&oacute;n propuesta mitiga estos efectos.</b>
+</p>
+<pre class="codeinput">
+<span class="comment">% La solucion implementada toma un valor mucho mas conservador, por lo que</span>
+<span class="comment">% mitiga menos las amplitudes de baja frecuencia</span>
+</pre>
+<h2 id="24">5. Tasa de Cambio (Derivada) y Punto Fijo</h2>
+<p>Se nos comunica que conocer solo la cantidad total de pacientes ya no es suficiente para organizar el consultorio. Ahora necesitamos saber qu&eacute; tan r&aacute;pido sube o baja esa cantidad. Esta "velocidad de cambio" de la demanda se calcula directamente usando la derivada matem&aacute;tica.</p>
+<p>Como ingeniero propon&eacute;s usar <b>representaci&oacute;n en punto fijo</b> para optimizar el sistema: buscamos aumentar la velocidad de c&aacute;lculo y minimizar el uso de memoria.</p>
+<div>
+<ol>
+<li>Construya la velocidad de cambio de <b>su se&ntilde;al resultado del ejercicio anterior</b> en (turno/d&iacute;a).</li>
+<li>Analice c&oacute;mo se distribuyen los valores de su se&ntilde;al (usando un histograma o gr&aacute;fico).</li>
+<li>A partir de esa observaci&oacute;n, determine un formato en punto fijo conveniente que ajuste para dicho rango</li>
+<li>Indique de su respuesta: N tama&ntilde;o de la palabra binaria (8,16 o 32 bits) y los m bits para la parte entera, n bits para la parte fraccionaria usando la notaci&oacute;n Qm.n (con 1 bit de signo), rango, resoluci&oacute;n y ruido cuantizaci&oacute;n</li>
+</ol>
+</div>
+<pre class="codeinput">
+<span class="comment">%%Completar con los resultados obtenidos:</span>
+</pre>
+<div>
+<ul>
+<li>Palabra binaria: 16 bits</li>
+<li>Representaci&oacute;n: Q1.14 (1 bit de signo, 1 bit entero, 14 bits fraccionarios)</li>
+<li>Rango: [-2, 1.9999]</li>
+<li>Resoluci&oacute;n: 2^-14 (aprox. 0.000061)</li>
+<li>Ruido de cuantizaci&oacute;n: +/- 2^-15 (error m&aacute;ximo de cuantizaci&oacute;n, aprox. +/- 0.000030)</li>
+</ul>
+</div>
+<pre class="codeinput">
+<span class="comment">% 1. Derivada discreta (diferencia finita)</span>
+dt = 10; <span class="comment">% El paso temporal entre muestras reducidas es de 10 d&iacute;as</span>
+velocidad = diff(x_reducida) / dt;
+
+<span class="comment">% 2. Histograma para analizar la distribuci&oacute;n</span>
+figure;
+histogram(velocidad, 20, <span class="string">'FaceColor'</span>, <span class="string">'#7E2F8E'</span>);
+title(<span class="string">'Distribuci&oacute;n de la Velocidad de Cambio (Turnos/D&iacute;a)'</span>);
+xlabel(<span class="string">'Velocidad (Turnos/D&iacute;a)'</span>);
+ylabel(<span class="string">'Frecuencia'</span>);
+grid <span class="string">on</span>;
+
+<span class="comment">% Obtenemos los valores m&aacute;ximo y m&iacute;nimo para comprobar el Punto Fijo</span>
+max_v = max(velocidad);
+min_v = min(velocidad);
+fprintf(<span class="string">'La velocidad var&iacute;a entre %.4f y %.4f turnos/d&iacute;a.\n'</span>, min_v, max_v);
+fprintf(<span class="string">'El formato Q1.14 (Rango +/- 2) es perfecto para contener estos valores sin desbordamiento.\n'</span>);
+<span class="comment">%-----------------------------------------</span>
+</pre>
+<pre class="codeoutput">La velocidad var&iacute;a entre -0.1500 y 0.5100 turnos/d&iacute;a.
+El formato Q1.14 (Rango +/- 2) es perfecto para contener estos valores sin desbordamiento.
+</pre>
+<img vspace="5" hspace="5" src="ExamenParcial_1_CS_2026_v5_07.png" alt=""> <p class="footer">
+<br>
+<a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2023b</a>
+<br>
+</p>
+</div>
+<!--
+##### SOURCE BEGIN #####
+clc, clear, close all;
+%% APELLIDO, NOMBRE: LEGAJO 
+%% Garcia Sad, Tomas Agustin: 14077 
+
+
+%% PARCIAL I: CONTROL Y SISTEMAS
+
+
+%% Contexto
+% Estás analizando la cantidad de turnos atendidos en un consultorio médico. 
+% El sistema registra diariamente el número de pacientes atendidos, generando 
+% una serie temporal discreta x[k], donde cada muestra representa un día.
+
+%% Objetivo
+% El equipo de gestión solicita elaborar un reporte resumido con un *valor representativo 
+% cada 10 días*, con el objetivo de facilitar el monitoreo operativo y la planificación 
+% de recursos a largo plazo, eliminando las fluctuaciones diarias irrelevantes 
+% para la tendencia general anual.
+
+%% Criterio de evaluaión
+% _“No se evaluará únicamente el resultado numérico, sino la calidad del razonamiento 
+% técnico y la justificación de las decisiones de diseño.”_
+%
+% _"Cuide la presentación, escala, colores, títulos y leyendas de sus gráficos para hacerlos 
+% lo más legible posible para la evaluación."_
+
+%% Tareas a desarrollar
+% Diseñar e implementar en MATLAB un script que permita reducir la serie 
+% temporal original. La salida debe ser una nueva serie reducida que entregue 
+% un valor representativo cada 10 días.
+
+
+%% 1. Análisis Previo de los Datos
+% Seleccione y aplique comandos de MATLAB para estudiar la señal original 
+% y extraer la información relevante.
+
+
+%% 
+%REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH
+x = load('datos_turnos.txt');
+x = x(:);
+N = length(x);
+k = 0:N-1;
+
+figure; 
+plot(k, x, 'LineWidth', 1.5);
+title('Serie Temporal Original: Turnos por Día');
+xlabel('Días (k)');
+ylabel('Cantidad de Pacientes');
+grid on; 
+xlim([0, N]); % Ajusta el eje X
+
+% REPLACE_WITH_DASH_DASH- Análisis en el Dominio de la Frecuencia (Física) REPLACE_WITH_DASH_DASH-
+Fs = 1;                           % Frecuencia de muestreo: 1 muestra/día
+X_f = fft(x);                     % Transformada Rápida de Fourier
+X_mag = abs(fftshift(X_f)) / N;   % Espectro de magnitud centrado y normalizado
+
+% Creación del eje de frecuencias físicas (ciclos/día)
+f = linspace(-Fs/2, Fs/2 - Fs/N, N); 
+
+figure;
+plot(f, X_mag, 'r', 'LineWidth', 1.2);
+title('Espectro de Magnitud de la Señal Original');
+xlabel('Frecuencia f (ciclos/día)');
+ylabel('Magnitud |X(f)|');
+xlim([0 Fs/2]); % Acotamos hasta la frecuencia de Nyquist (0.5 ciclos/día)
+grid on;
+figure;
+plot(f, X_mag, 'r', 'LineWidth', 1.2);
+title('Espectro de Magnitud de la Señal Original');
+xlabel('Frecuencia f (ciclos/día)');
+ylabel('Magnitud |X(f)|');
+xlim([0 0.2]); % Acotamos hasta la frecuencia de Nyquist (0.5 ciclos/día)
+grid on;
+%REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH
+
+
+%%
+% 
+% *1.1 Justifique brevemente la elección de dichas herramientas*
+
+% Con la base de utilizar el archivo 'datos_turnos.txt' como base de los
+% datos, se puso con forma de vector columna por si hubo problema al cargar
+% la informacion. Luego se genero un vector de tiempo con la longitud de la
+% cantidad de datos con los cuales se cuenta. Finalmente Se imprimió esta
+% informacion en un gráfico que permita ver la cantidad de pasientes en
+% funcion del día. Tambien se realizó un gráfico en el dominio de la
+% frecuencia para mayor obtención de informacion
+
+%%
+% 
+% *1.2 Explique los resultados obtenidos del análisis*
+
+% Se puede observar en la gráfica la información de cuantas personas se
+% atienden por día. Esto parece tener una forma peoriodica, con un periodo
+% de aproximadamente 1 año. Quiero tener la informacion cada 10 días previo
+% a su desarrollo.
+
+%%
+% 
+% *1.3 Mencione qué información le resulta relevante y útil para la solución.*
+
+% La información mas relevante en este caso es que se desea tener la informacion cada 10 días.
+% Otro aspecto importante es que la nueva frecuencia máxima representable (Nyquist) 
+% será fc = 0.05 ciclos/día (Fs / 2M).
+%El espectro revela componentes de alta frecuencia (fluctuaciones diarias) superiores a fc. 
+% Esto confirma la necesidad de aplicar un filtro pasabajos con frecuencia de corte en 0.05 antes 
+% de submuestrear
+
+
+%% 2. Pre-Proceso
+% *Proceda a realizar el tratamiento de la señal*
+
+%Primero procesamos la señal con filtro antialiasing 
+
+N_ma = 10;                             % Tamaño de la ventana
+b_xr = (1/N_ma) * ones(1, N_ma);       % 
+a_xr = 1;                              % 
+
+% Aplicación del filtro
+x_filtrada = filter(b_xr, a_xr, x);
+fs_new =Fs/N_ma;
+
+% 1. Decimación de la señal filtrada usando tu estructura
+x_reducida = x_filtrada(1:round(Fs/fs_new):end);
+k_reducido = k(1:round(Fs/fs_new):end);
+
+
+%REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH-
+
+
+%%
+% 
+% *2.1 Comente brevemente sobre el método elegido para el pre-procesamiento.*
+
+% Para el preprocesamiento se eligio utilizar un filtro pasa bajo para
+% obtener los valores mas representativos de la señal ya que de esta manera
+% se filtran los valores de alta frecuencia como la variación día a dia.
+
+%%
+% 
+% *2.2 ¿Por qué dicha técnica es necesaria y adecuada para este problema específico? (considerando el contenido frecuencial).*
+
+% Esto es necesario debido a que la variacion día a dia es bastante alta, y
+% como queremos muestrear cada 10 días, esta variacion es muy poca
+% representativa. Por lo que se intenta eliminar ese tipo de "ruido"
+
+%%
+% 
+% *2.3 Mencione los criterios utilizados para definir los parámetros del sistema de procesamiento.*
+
+% El principal criterio utilizado es el de intentar descartar la frecuencia
+% alta mediante un filtro de media movil, haciendo uso para este del mismo
+% parámetro que se utilizará al diezmar. Esto permite reducir la alta
+% frecuencia y obtener una señal mas limpia. Mediante diversas pruebas,
+% este filtro es el que dio mejor resultado comparado con los de ventana en
+% el dominio de la frecuencia
+
+
+%% 3. Generar serie final y gráficos
+% A partir del procesamiento anterior, generar la serie final y grafiquela en 
+% el tiempo y la frecuencia. Asegurarse de que la alineación temporal sea correcta 
+% respecto a la señal original.
+
+%% 3. Generar serie final y gráficos
+% A partir del procesamiento anterior, generar la serie final y grafiquela en 
+% el tiempo y la frecuencia. Asegurarse de que la alineación temporal sea correcta 
+% respecto a la señal original.
+
+% REPLACE_WITH_DASH_DASH- 3.1 Gráficos en el Dominio del Tiempo REPLACE_WITH_DASH_DASH-
+figure; 
+hold on;
+plot(k, x, 'c', 'LineWidth', 1, 'DisplayName', 'Original');
+plot(k_reducido, x_reducida, 'r-', 'LineWidth', 2, 'DisplayName', 'Reducida');
+
+title('Comparación: Serie Temporal Original vs. Reducida');
+xlabel('Días (k)');
+ylabel('Cantidad de Pacientes');
+legend('show'); 
+grid on; 
+xlim([0, N]);
+hold off;
+
+% REPLACE_WITH_DASH_DASH- 3.2 Gráficos en el Dominio de la Frecuencia (Señal Reducida) REPLACE_WITH_DASH_DASH-
+N_red = length(x_reducida);
+X_f_red = fft(x_reducida);
+X_mag_red = abs(fftshift(X_f_red)) / N_red;
+
+% Eje de frecuencias para la nueva señal (llega hasta fs_new/2 = 0.05)
+f_red = linspace(-fs_new/2, fs_new/2 - fs_new/N_red, N_red);
+
+figure;
+plot(f_red, X_mag_red, 'r', 'LineWidth', 1.5);
+title('Espectro de Magnitud de la Señal Reducida');
+xlabel('Frecuencia f (ciclos/día)');
+ylabel('Magnitud |X_{red}(f)|');
+xlim([0 fs_new/2]); % Mostramos hasta el nuevo límite de Nyquist
+grid on;
+
+
+
+
+%% 4. Validación de la respuesta
+% Comparar su solución con al menos una alternativa que considere incorrecta 
+% o subóptima para validar por contraste la suya. 
+
+
+%% 
+N_ma2 = 2;                             % Tamaño de la ventana
+b_xr2 = (1/N_ma2) * ones(1, N_ma2);       
+a_xr2 = 1;                              
+
+% Aplicación del filtro
+x_filtrada2 = filter(b_xr2, a_xr2, x);
+fs_new2 =Fs/10;
+
+% 1. Decimación de la señal filtrada usando tu estructura
+x_reducida2 = x_filtrada2(1:round(Fs/fs_new2):end);
+k_reducido = k(1:round(Fs/fs_new2):end);
+
+% REPLACE_WITH_DASH_DASH- Gráficos en el Dominio del Tiempo2 REPLACE_WITH_DASH_DASH-
+figure; 
+hold on;
+plot(k, x, 'c', 'LineWidth', 1, 'DisplayName', 'Original');
+plot(k_reducido, x_reducida2, 'r-', 'LineWidth', 2, 'DisplayName', 'Reducida');
+
+title('Filtro debil');
+xlabel('Días (k)');
+ylabel('Cantidad de Pacientes');
+legend('show'); 
+grid on; 
+xlim([0, N]);
+hold off;
+
+%%
+% 
+% *4.1 Qué efectos negativos produce la alternativa subóptima (en el dominio del tiempo y/o frecuencia).*
+
+% Se eligio un filtro de media movil con menor atenuacion. Al promediar
+% valores por sobre los que se decimaran, la amplitud de frecuencias altas
+% no se ve reducida, indicando que el filtro no permite ver informacion que puede ser
+% valiosa
+% Otra opcion es elegir un filtro de media movil con mayor atenuacion. Al promediar
+% valores por sobre los que se decimaran, la amplitud de frecuencias bajas
+% se ve reducida, indicando que el filtro no permite ver informacion que puede ser
+% valiosa. Ademas, esto puede generar una respuesta con demasiado retardo
+% en el tiempo
+
+
+%%
+% 
+% *4.2 Por qué su solución propuesta mitiga estos efectos.*
+
+% La solucion implementada toma un valor mucho mas conservador, por lo que
+% mitiga menos las amplitudes de baja frecuencia
+
+%% 5. Tasa de Cambio (Derivada) y Punto Fijo
+% Se nos comunica que conocer solo la cantidad total de pacientes ya no es suficiente para organizar el consultorio. 
+% Ahora necesitamos saber qué tan rápido sube o baja esa cantidad. Esta 
+% "velocidad de cambio" de la demanda se calcula directamente usando la derivada matemática.
+%%
+% Como ingeniero proponés usar *representación en punto fijo* para optimizar el sistema: 
+% buscamos aumentar la velocidad de cálculo y minimizar el uso de memoria.
+
+%%
+% 
+% # Construya la velocidad de cambio de *su señal resultado del ejercicio anterior* en (turno/día). 
+% # Analice cómo se distribuyen los valores de su señal (usando un histograma o gráfico). 
+% # A partir de esa observación, determine un formato en punto fijo conveniente que ajuste para dicho rango 
+% # Indique de su respuesta: N tamaño de la palabra binaria (8,16 o 32 bits) y los m bits para la parte entera, n bits para la parte fraccionaria usando la notación Qm.n (con 1 bit de signo), rango, resolución y ruido cuantización 
+
+
+%%Completar con los resultados obtenidos:
+%%
+% * Palabra binaria: 16 bits
+% * Representación: Q1.14 (1 bit de signo, 1 bit entero, 14 bits fraccionarios)
+% * Rango: [-2, 1.9999]
+% * Resolución: 2^-14 (aprox. 0.000061)
+% * Ruido de cuantización: +/- 2^-15 (error máximo de cuantización, aprox. +/- 0.000030)
+
+
+
+% 1. Derivada discreta (diferencia finita)
+dt = 10; % El paso temporal entre muestras reducidas es de 10 días
+velocidad = diff(x_reducida) / dt;
+
+% 2. Histograma para analizar la distribución
+figure;
+histogram(velocidad, 20, 'FaceColor', '#7E2F8E');
+title('Distribución de la Velocidad de Cambio (Turnos/Día)');
+xlabel('Velocidad (Turnos/Día)');
+ylabel('Frecuencia');
+grid on;
+
+% Obtenemos los valores máximo y mínimo para comprobar el Punto Fijo
+max_v = max(velocidad);
+min_v = min(velocidad);
+fprintf('La velocidad varía entre %.4f y %.4f turnos/día.\n', min_v, max_v);
+fprintf('El formato Q1.14 (Rango +/- 2) es perfecto para contener estos valores sin desbordamiento.\n');
+%REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH-
+
+
+
+
+
+
+
+
+
+##### SOURCE END #####
+-->
+</body>
+</html>

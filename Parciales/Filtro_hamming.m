@@ -8,9 +8,9 @@ function Hd = Filtro_hamming
 % FIR Window Lowpass filter designed using the FIR1 function.
 
 % All frequency values are in Hz.
-Fs = 250;  % Sampling Frequency
+Fs = 257;  % Sampling Frequency
 
-N    =10;       % Order
+N    =257;       % Order
 Fc   = 15;       % Cutoff Frequency
 flag = 'scale';  % Sampling Flag
 
