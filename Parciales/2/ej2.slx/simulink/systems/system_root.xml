@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-1, -8, 1921, 1041]</P>
+  <P Name="Open">on</P>
+  <P Name="ReportName">simulink-default.rpt</P>
+  <P Name="SIDHighWatermark">67</P>
+  <Block BlockType="Gain" Name="10000/1" SID="41">
+    <P Name="Position">[680, 540, 710, 570]</P>
+    <P Name="ZOrder">308</P>
+    <P Name="Gain">10000/1000</P>
+  </Block>
+  <Block BlockType="Gain" Name="10000/1000" SID="40">
+    <P Name="Position">[670, 315, 700, 345]</P>
+    <P Name="ZOrder">296</P>
+    <P Name="Gain">10000/1000</P>
+  </Block>
+  <Block BlockType="Gain" Name="10000/2" SID="53">
+    <P Name="Position">[680, 765, 710, 795]</P>
+    <P Name="ZOrder">320</P>
+    <P Name="Gain">10000/1500</P>
+  </Block>
+  <Block BlockType="Gain" Name="200/1" SID="42">
+    <P Name="Position">[780, 600, 810, 630]</P>
+    <P Name="ZOrder">303</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="Gain">200/1000</P>
+  </Block>
+  <Block BlockType="Gain" Name="200/1000" SID="33">
+    <P Name="Position">[770, 375, 800, 405]</P>
+    <P Name="ZOrder">289</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="Gain">200/1000</P>
+  </Block>
+  <Block BlockType="Gain" Name="200/1500" SID="54">
+    <P Name="Position">[780, 825, 810, 855]</P>
+    <P Name="ZOrder">315</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="Gain">200/1500</P>
+  </Block>
+  <Block BlockType="Gain" Name="9.1" SID="43">
+    <P Name="Position">[690, 475, 720, 505]</P>
+    <P Name="ZOrder">301</P>
+    <P Name="Gain">9.82</P>
+  </Block>
+  <Block BlockType="Gain" Name="9.2" SID="55">
+    <P Name="Position">[690, 700, 720, 730]</P>
+    <P Name="ZOrder">313</P>
+    <P Name="Gain">9.82</P>
+  </Block>
+  <Block BlockType="Gain" Name="9.82" SID="30">
+    <P Name="Position">[680, 250, 710, 280]</P>
+    <P Name="ZOrder">286</P>
+    <P Name="Gain">9.82</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain" SID="38">
+    <P Name="Position">[615, 315, 645, 345]</P>
+    <P Name="ZOrder">295</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain1" SID="44">
+    <P Name="Position">[625, 540, 655, 570]</P>
+    <P Name="ZOrder">307</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain2" SID="56">
+    <P Name="Position">[625, 765, 655, 795]</P>
+    <P Name="ZOrder">319</P>
+  </Block>
+  <Block BlockType="Integrator" Name="Integrator" SID="34">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[820, 315, 850, 345]</P>
+    <P Name="ZOrder">290</P>
+    <P Name="InitialCondition">25</P>
+  </Block>
+  <Block BlockType="Integrator" Name="Integrator1" SID="45">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[830, 540, 860, 570]</P>
+    <P Name="ZOrder">304</P>
+    <P Name="InitialCondition">25</P>
+  </Block>
+  <Block BlockType="Integrator" Name="Integrator2" SID="57">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[830, 765, 860, 795]</P>
+    <P Name="ZOrder">316</P>
+    <P Name="InitialCondition">25</P>
+  </Block>
+  <Block BlockType="Scope" Name="Scope" SID="26">
+    <PortCounts in="1"/>
+    <P Name="Position">[1050, 274, 1080, 306]</P>
+    <P Name="ZOrder">283</P>
+    <P Name="ScopeSpecificationString">Simulink.scopes.TimeScopeBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true,&apos;FigureColor&apos;,[1 1 1]),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Time Domain&apos;,true,&apos;SerializedDisplays&apos;,{struct(&apos;MinYLimReal&apos;,&apos;23.89706&apos;,&apos;MaxYLimReal&apos;,&apos;30.02451&apos;,&apos;YLabelReal&apos;,&apos;v [m/s]&apos;,&apos;MinYLimMag&apos;,&apos;23.89706&apos;,&apos;MaxYLimMag&apos;,&apos;30.02451&apos;,&apos;LegendVisibility&apos;,&apos;Off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[1 1 1],&apos;AxesTickColor&apos;,[0 0 0],&apos;ColorOrder&apos;,[0 0.447058823529412 0.741176470588235;0.850980392156863 0.325490196078431 0.0980392156862745;0.929411764705882 0.694117647058824 0.125490196078431;0.494117647058824 0.184313725490196 0.556862745098039;0.466666666666667 0.674509803921569 0.188235294117647;0.301960784313725 0.745098039215686 0.933333333333333;0.635294117647059 0.0784313725490196 0.184313725490196],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{struct(&apos;Color&apos;,[1 0 0],&apos;LineStyle&apos;,&apos;-&apos;,&apos;LineWidth&apos;,1,&apos;Marker&apos;,&apos;none&apos;,&apos;Visible&apos;,&apos;on&apos;)}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Integrator&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,1)},&apos;ShowTimeAxisLabel&apos;,true,&apos;DisplayPropertyDefaults&apos;,struct(&apos;MinYLimReal&apos;,&apos;23.89706&apos;,&apos;MaxYLimReal&apos;,&apos;30.02451&apos;,&apos;YLabelReal&apos;,&apos;v [m/s]&apos;,&apos;MinYLimMag&apos;,&apos;23.89706&apos;,&apos;MaxYLimMag&apos;,&apos;30.02451&apos;,&apos;LegendVisibility&apos;,&apos;Off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[1 1 1],&apos;AxesTickColor&apos;,[0 0 0],&apos;ColorOrder&apos;,[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true,&apos;PreviousAutoscale&apos;,&apos;XY&apos;,&apos;OnceAtStop&apos;,false),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2023a&apos;)),&apos;Version&apos;,&apos;2023a&apos;,&apos;Position&apos;,[611 164 560 420])</P>
+    <P Name="NumInputPorts">1</P>
+    <P Name="Floating">off</P>
+  </Block>
+  <Block BlockType="Scope" Name="Scope1" SID="46">
+    <PortCounts in="1"/>
+    <P Name="Position">[1060, 499, 1090, 531]</P>
+    <P Name="ZOrder">298</P>
+    <P Name="ScopeSpecificationString">Simulink.scopes.TimeScopeBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true,&apos;FigureColor&apos;,[1 1 1]),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true,&apos;DataLoggingVariableName&apos;,&apos;ScopeData1&apos;),extmgr.Configuration(&apos;Visuals&apos;,&apos;Time Domain&apos;,true,&apos;SerializedDisplays&apos;,{struct(&apos;MinYLimReal&apos;,&apos;23.89706&apos;,&apos;MaxYLimReal&apos;,&apos;30.02451&apos;,&apos;YLabelReal&apos;,&apos;v [m/s]&apos;,&apos;MinYLimMag&apos;,&apos;23.89706&apos;,&apos;MaxYLimMag&apos;,&apos;30.02451&apos;,&apos;LegendVisibility&apos;,&apos;Off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[1 1 1],&apos;AxesTickColor&apos;,[0 0 0],&apos;ColorOrder&apos;,[0 0.447058823529412 0.741176470588235;0.850980392156863 0.325490196078431 0.0980392156862745;0.929411764705882 0.694117647058824 0.125490196078431;0.494117647058824 0.184313725490196 0.556862745098039;0.466666666666667 0.674509803921569 0.188235294117647;0.301960784313725 0.745098039215686 0.933333333333333;0.635294117647059 0.0784313725490196 0.184313725490196],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{struct(&apos;Color&apos;,[1 0 0],&apos;LineStyle&apos;,&apos;-&apos;,&apos;LineWidth&apos;,1,&apos;Marker&apos;,&apos;none&apos;,&apos;Visible&apos;,&apos;on&apos;)}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Integrator1&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,1)},&apos;ShowTimeAxisLabel&apos;,true,&apos;DisplayPropertyDefaults&apos;,struct(&apos;MinYLimReal&apos;,&apos;23.89706&apos;,&apos;MaxYLimReal&apos;,&apos;30.02451&apos;,&apos;YLabelReal&apos;,&apos;v [m/s]&apos;,&apos;MinYLimMag&apos;,&apos;23.89706&apos;,&apos;MaxYLimMag&apos;,&apos;30.02451&apos;,&apos;LegendVisibility&apos;,&apos;Off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[1 1 1],&apos;AxesTickColor&apos;,[0 0 0],&apos;ColorOrder&apos;,[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true,&apos;PreviousAutoscale&apos;,&apos;XY&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2023a&apos;)),&apos;Version&apos;,&apos;2023a&apos;,&apos;Position&apos;,[611 164 560 420])</P>
+    <P Name="NumInputPorts">1</P>
+    <P Name="Floating">off</P>
+  </Block>
+  <Block BlockType="Scope" Name="Scope2" SID="58">
+    <PortCounts in="1"/>
+    <P Name="Position">[1060, 724, 1090, 756]</P>
+    <P Name="ZOrder">310</P>
+    <P Name="ScopeSpecificationString">Simulink.scopes.TimeScopeBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true,&apos;FigureColor&apos;,[1 1 1]),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true,&apos;DataLoggingVariableName&apos;,&apos;ScopeData2&apos;),extmgr.Configuration(&apos;Visuals&apos;,&apos;Time Domain&apos;,true,&apos;SerializedDisplays&apos;,{struct(&apos;MinYLimReal&apos;,&apos;23.89706&apos;,&apos;MaxYLimReal&apos;,&apos;30.02451&apos;,&apos;YLabelReal&apos;,&apos;v [m/s]&apos;,&apos;MinYLimMag&apos;,&apos;23.89706&apos;,&apos;MaxYLimMag&apos;,&apos;30.02451&apos;,&apos;LegendVisibility&apos;,&apos;Off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[1 1 1],&apos;AxesTickColor&apos;,[0 0 0],&apos;ColorOrder&apos;,[0 0.447058823529412 0.741176470588235;0.850980392156863 0.325490196078431 0.0980392156862745;0.929411764705882 0.694117647058824 0.125490196078431;0.494117647058824 0.184313725490196 0.556862745098039;0.466666666666667 0.674509803921569 0.188235294117647;0.301960784313725 0.745098039215686 0.933333333333333;0.635294117647059 0.0784313725490196 0.184313725490196],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{struct(&apos;Color&apos;,[1 0 0],&apos;LineStyle&apos;,&apos;-&apos;,&apos;LineWidth&apos;,1,&apos;Marker&apos;,&apos;none&apos;,&apos;Visible&apos;,&apos;on&apos;)}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Integrator2&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,1)},&apos;ShowTimeAxisLabel&apos;,true,&apos;DisplayPropertyDefaults&apos;,struct(&apos;MinYLimReal&apos;,&apos;23.89706&apos;,&apos;MaxYLimReal&apos;,&apos;30.02451&apos;,&apos;YLabelReal&apos;,&apos;v [m/s]&apos;,&apos;MinYLimMag&apos;,&apos;23.89706&apos;,&apos;MaxYLimMag&apos;,&apos;30.02451&apos;,&apos;LegendVisibility&apos;,&apos;Off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[1 1 1],&apos;AxesTickColor&apos;,[0 0 0],&apos;ColorOrder&apos;,[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true,&apos;PreviousAutoscale&apos;,&apos;XY&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2023a&apos;)),&apos;Version&apos;,&apos;2023a&apos;,&apos;Position&apos;,[611 164 560 420])</P>
+    <P Name="NumInputPorts">1</P>
+    <P Name="Floating">off</P>
+  </Block>
+  <Block BlockType="Reference" Name="Signal Editor" SID="36">
+    <PortCounts out="2"/>
+    <P Name="Position">[435, 235, 520, 275]</P>
+    <P Name="ZOrder">292</P>
+    <P Name="LibrarySourceBlock">simulink/Sources/Signal Editor</P>
+    <P Name="LibraryVersion">7.13</P>
+    <P Name="UserDataPersistent">on</P>
+    <P Name="UserData" Ref="bdmxdata:UserData_36"/>
+    <P Name="SourceBlock">SignalEditorBlockLib/Signal Editor</P>
+    <P Name="SourceType">SignalEditor</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="FileName">perturbn.mat</P>
+      <P Name="ActiveScenario">Scenario</P>
+      <P Name="ActiveSignal">2°</P>
+      <P Name="IsBus">off</P>
+      <P Name="OutputBusObjectStr">Bus: BusObject</P>
+      <P Name="SampleTime">0</P>
+      <P Name="Interpolate">off</P>
+      <P Name="ZeroCross">off</P>
+      <P Name="OutputAfterFinalValue">Setting to zero</P>
+      <P Name="Unit">inherit</P>
+      <P Name="PreserveSignalName">on</P>
+      <P Name="ApplySigPropsToAllScenarios">on</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">2°</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="PropagatedSignals">0°</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Signal Editor1" SID="47">
+    <PortCounts out="2"/>
+    <P Name="Position">[445, 460, 530, 500]</P>
+    <P Name="ZOrder">305</P>
+    <P Name="LibrarySourceBlock">simulink/Sources/Signal Editor</P>
+    <P Name="LibraryVersion">7.13</P>
+    <P Name="UserDataPersistent">on</P>
+    <P Name="UserData" Ref="bdmxdata:UserData_47"/>
+    <P Name="SourceBlock">SignalEditorBlockLib/Signal Editor</P>
+    <P Name="SourceType">SignalEditor</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="FileName">perturbn.mat</P>
+      <P Name="ActiveScenario">Scenario</P>
+      <P Name="ActiveSignal">2°</P>
+      <P Name="IsBus">off</P>
+      <P Name="OutputBusObjectStr">Bus: BusObject</P>
+      <P Name="SampleTime">0</P>
+      <P Name="Interpolate">off</P>
+      <P Name="ZeroCross">off</P>
+      <P Name="OutputAfterFinalValue">Setting to zero</P>
+      <P Name="Unit">inherit</P>
+      <P Name="PreserveSignalName">on</P>
+      <P Name="ApplySigPropsToAllScenarios">on</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">2°</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="PropagatedSignals">0°</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Signal Editor2" SID="59">
+    <PortCounts out="2"/>
+    <P Name="Position">[445, 685, 530, 725]</P>
+    <P Name="ZOrder">317</P>
+    <P Name="LibrarySourceBlock">simulink/Sources/Signal Editor</P>
+    <P Name="LibraryVersion">7.13</P>
+    <P Name="UserDataPersistent">on</P>
+    <P Name="UserData" Ref="bdmxdata:UserData_59"/>
+    <P Name="SourceBlock">SignalEditorBlockLib/Signal Editor</P>
+    <P Name="SourceType">SignalEditor</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="FileName">perturbn.mat</P>
+      <P Name="ActiveScenario">Scenario</P>
+      <P Name="ActiveSignal">2°</P>
+      <P Name="IsBus">off</P>
+      <P Name="OutputBusObjectStr">Bus: BusObject</P>
+      <P Name="SampleTime">0</P>
+      <P Name="Interpolate">off</P>
+      <P Name="ZeroCross">off</P>
+      <P Name="OutputAfterFinalValue">Setting to zero</P>
+      <P Name="Unit">inherit</P>
+      <P Name="PreserveSignalName">on</P>
+      <P Name="ApplySigPropsToAllScenarios">on</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">2°</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="PropagatedSignals">0°</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Trigonometry" Name="Sin1" SID="32">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[615, 250, 645, 280]</P>
+    <P Name="ZOrder">287</P>
+  </Block>
+  <Block BlockType="Trigonometry" Name="Sin2" SID="48">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[625, 475, 655, 505]</P>
+    <P Name="ZOrder">302</P>
+  </Block>
+  <Block BlockType="Trigonometry" Name="Sin3" SID="60">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[625, 700, 655, 730]</P>
+    <P Name="ZOrder">314</P>
+  </Block>
+  <Block BlockType="Sum" Name="Sum" SID="39">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[570, 320, 590, 340]</P>
+    <P Name="ZOrder">294</P>
+    <P Name="Inputs">|+-</P>
+  </Block>
+  <Block BlockType="Sum" Name="Sum1" SID="29">
+    <PortCounts in="3" out="1"/>
+    <P Name="Position">[745, 320, 765, 340]</P>
+    <P Name="ZOrder">285</P>
+    <P Name="Inputs">-+-</P>
+  </Block>
+  <Block BlockType="Sum" Name="Sum2" SID="49">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[580, 545, 600, 565]</P>
+    <P Name="ZOrder">306</P>
+    <P Name="Inputs">|+-</P>
+  </Block>
+  <Block BlockType="Sum" Name="Sum3" SID="50">
+    <PortCounts in="3" out="1"/>
+    <P Name="Position">[755, 545, 775, 565]</P>
+    <P Name="ZOrder">300</P>
+    <P Name="Inputs">-+-</P>
+  </Block>
+  <Block BlockType="Sum" Name="Sum4" SID="61">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[580, 770, 600, 790]</P>
+    <P Name="ZOrder">318</P>
+    <P Name="Inputs">|+-</P>
+  </Block>
+  <Block BlockType="Sum" Name="Sum5" SID="62">
+    <PortCounts in="3" out="1"/>
+    <P Name="Position">[755, 770, 775, 790]</P>
+    <P Name="ZOrder">312</P>
+    <P Name="Inputs">-+-</P>
+  </Block>
+  <Block BlockType="ToWorkspace" Name="To Workspace" SID="65">
+    <PortCounts in="1"/>
+    <P Name="Position">[1090, 340, 1180, 370]</P>
+    <P Name="ZOrder">321</P>
+    <P Name="VariableName">v_escalon</P>
+    <P Name="MaxDataPoints">inf</P>
+    <P Name="SaveFormat">Timeseries</P>
+    <P Name="FixptAsFi">on</P>
+    <P Name="SampleTime">-1</P>
+  </Block>
+  <Block BlockType="ToWorkspace" Name="To Workspace1" SID="66">
+    <PortCounts in="1"/>
+    <P Name="Position">[1135, 600, 1225, 630]</P>
+    <P Name="ZOrder">322</P>
+    <P Name="VariableName">v_escalon_perturbacion</P>
+    <P Name="MaxDataPoints">inf</P>
+    <P Name="SaveFormat">Timeseries</P>
+    <P Name="FixptAsFi">on</P>
+    <P Name="SampleTime">-1</P>
+  </Block>
+  <Block BlockType="ToWorkspace" Name="To Workspace2" SID="67">
+    <PortCounts in="1"/>
+    <P Name="Position">[1125, 835, 1215, 865]</P>
+    <P Name="ZOrder">323</P>
+    <P Name="VariableName">v_m1500</P>
+    <P Name="MaxDataPoints">inf</P>
+    <P Name="SaveFormat">Timeseries</P>
+    <P Name="FixptAsFi">on</P>
+    <P Name="SampleTime">-1</P>
+  </Block>
+  <Block BlockType="Reference" Name="v_ref" SID="27">
+    <PortCounts out="1"/>
+    <P Name="Position">[435, 310, 520, 350]</P>
+    <P Name="ZOrder">284</P>
+    <P Name="LibrarySourceBlock">simulink/Sources/Signal Editor</P>
+    <P Name="LibraryVersion">7.13</P>
+    <P Name="UserDataPersistent">on</P>
+    <P Name="UserData" Ref="bdmxdata:UserData_27"/>
+    <P Name="SourceBlock">SignalEditorBlockLib/Signal Editor</P>
+    <P Name="SourceType">SignalEditor</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="FileName">v_ref.mat</P>
+      <P Name="ActiveScenario">Scenario</P>
+      <P Name="ActiveSignal">Step</P>
+      <P Name="IsBus">off</P>
+      <P Name="OutputBusObjectStr">Bus: BusObject</P>
+      <P Name="SampleTime">0</P>
+      <P Name="Interpolate">off</P>
+      <P Name="ZeroCross">off</P>
+      <P Name="OutputAfterFinalValue">Setting to zero</P>
+      <P Name="Unit">inherit</P>
+      <P Name="PreserveSignalName">on</P>
+      <P Name="ApplySigPropsToAllScenarios">on</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Step</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="v_ref1" SID="51">
+    <PortCounts out="1"/>
+    <P Name="Position">[445, 535, 530, 575]</P>
+    <P Name="ZOrder">299</P>
+    <P Name="LibrarySourceBlock">simulink/Sources/Signal Editor</P>
+    <P Name="LibraryVersion">7.13</P>
+    <P Name="UserDataPersistent">on</P>
+    <P Name="UserData" Ref="bdmxdata:UserData_51"/>
+    <P Name="SourceBlock">SignalEditorBlockLib/Signal Editor</P>
+    <P Name="SourceType">SignalEditor</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="FileName">v_ref.mat</P>
+      <P Name="ActiveScenario">Scenario</P>
+      <P Name="ActiveSignal">Step</P>
+      <P Name="IsBus">off</P>
+      <P Name="OutputBusObjectStr">Bus: BusObject</P>
+      <P Name="SampleTime">0</P>
+      <P Name="Interpolate">off</P>
+      <P Name="ZeroCross">off</P>
+      <P Name="OutputAfterFinalValue">Setting to zero</P>
+      <P Name="Unit">inherit</P>
+      <P Name="PreserveSignalName">on</P>
+      <P Name="ApplySigPropsToAllScenarios">on</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Step</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="v_ref2" SID="63">
+    <PortCounts out="1"/>
+    <P Name="Position">[445, 760, 530, 800]</P>
+    <P Name="ZOrder">311</P>
+    <P Name="LibrarySourceBlock">simulink/Sources/Signal Editor</P>
+    <P Name="LibraryVersion">7.13</P>
+    <P Name="UserDataPersistent">on</P>
+    <P Name="UserData" Ref="bdmxdata:UserData_63"/>
+    <P Name="SourceBlock">SignalEditorBlockLib/Signal Editor</P>
+    <P Name="SourceType">SignalEditor</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="FileName">v_ref.mat</P>
+      <P Name="ActiveScenario">Scenario</P>
+      <P Name="ActiveSignal">Step</P>
+      <P Name="IsBus">off</P>
+      <P Name="OutputBusObjectStr">Bus: BusObject</P>
+      <P Name="SampleTime">0</P>
+      <P Name="Interpolate">off</P>
+      <P Name="ZeroCross">off</P>
+      <P Name="OutputAfterFinalValue">Setting to zero</P>
+      <P Name="Unit">inherit</P>
+      <P Name="PreserveSignalName">on</P>
+      <P Name="ApplySigPropsToAllScenarios">on</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Step</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Outport" Name="Velocidad" SID="19">
+    <P Name="Position">[975, 323, 1015, 337]</P>
+    <P Name="ZOrder">178</P>
+  </Block>
+  <Block BlockType="Outport" Name="Velocidad1" SID="52">
+    <P Name="Position">[985, 548, 1025, 562]</P>
+    <P Name="ZOrder">297</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Outport" Name="Velocidad2" SID="64">
+    <P Name="Position">[985, 773, 1025, 787]</P>
+    <P Name="ZOrder">309</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">54</P>
+    <P Name="Src">27#out:1</P>
+    <P Name="Dst">39#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">89</P>
+    <P Name="Src">36#out:2</P>
+    <P Name="Dst">32#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">20</P>
+    <P Name="Src">32#out:1</P>
+    <P Name="Dst">30#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">21</P>
+    <P Name="Src">30#out:1</P>
+    <P Name="Points">[40, 0]</P>
+    <P Name="Dst">29#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">22</P>
+    <P Name="Src">33#out:1</P>
+    <P Name="Points">[-10, 0]</P>
+    <P Name="Dst">29#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">23</P>
+    <P Name="Src">29#out:1</P>
+    <P Name="Dst">34#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">30</P>
+    <P Name="Src">34#out:1</P>
+    <P Name="Points">[22, 0]</P>
+    <Branch>
+      <P Name="ZOrder">32</P>
+      <P Name="Points">[0, 60]</P>
+      <P Name="Dst">33#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">31</P>
+      <P Name="Points">[76, 0]</P>
+      <Branch>
+        <P Name="ZOrder">53</P>
+        <P Name="Points">[0, 99; -373, 0]</P>
+        <P Name="Dst">39#in:2</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">25</P>
+        <P Name="Points">[0, -40; 74, 0]</P>
+        <Branch>
+          <P Name="ZOrder">106</P>
+          <P Name="Points">[0, 65]</P>
+          <P Name="Dst">65#in:1</P>
+        </Branch>
+        <Branch>
+          <P Name="ZOrder">105</P>
+          <P Name="Dst">26#in:1</P>
+        </Branch>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">24</P>
+        <P Name="Dst">19#in:1</P>
+      </Branch>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">52</P>
+    <P Name="Src">39#out:1</P>
+    <P Name="Dst">38#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">55</P>
+    <P Name="Src">38#out:1</P>
+    <P Name="Dst">40#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">57</P>
+    <P Name="Src">40#out:1</P>
+    <P Name="Dst">29#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">74</P>
+    <P Name="Src">48#out:1</P>
+    <P Name="Dst">43#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">75</P>
+    <P Name="Src">50#out:1</P>
+    <P Name="Dst">45#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">76</P>
+    <P Name="Src">43#out:1</P>
+    <P Name="Points">[40, 0]</P>
+    <P Name="Dst">50#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">83</P>
+    <P Name="Src">51#out:1</P>
+    <P Name="Dst">49#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">84</P>
+    <P Name="Src">44#out:1</P>
+    <P Name="Dst">41#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">85</P>
+    <P Name="Src">49#out:1</P>
+    <P Name="Dst">44#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">86</P>
+    <P Name="Src">41#out:1</P>
+    <P Name="Dst">50#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">87</P>
+    <P Name="Src">47#out:1</P>
+    <P Name="Points">[43, 0; 0, 20]</P>
+    <P Name="Dst">48#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">88</P>
+    <P Name="Src">42#out:1</P>
+    <P Name="Points">[-10, 0]</P>
+    <P Name="Dst">50#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">90</P>
+    <P Name="Src">55#out:1</P>
+    <P Name="Points">[40, 0]</P>
+    <P Name="Dst">62#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">91</P>
+    <P Name="Src">60#out:1</P>
+    <P Name="Dst">55#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">92</P>
+    <P Name="Src">62#out:1</P>
+    <P Name="Dst">57#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">93</P>
+    <P Name="Src">54#out:1</P>
+    <P Name="Points">[-10, 0]</P>
+    <P Name="Dst">62#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">94</P>
+    <P Name="Src">59#out:1</P>
+    <P Name="Points">[43, 0; 0, 20]</P>
+    <P Name="Dst">60#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">95</P>
+    <P Name="Src">53#out:1</P>
+    <P Name="Dst">62#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">96</P>
+    <P Name="Src">61#out:1</P>
+    <P Name="Dst">56#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">97</P>
+    <P Name="Src">63#out:1</P>
+    <P Name="Dst">61#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">98</P>
+    <P Name="Src">56#out:1</P>
+    <P Name="Dst">53#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">82</P>
+    <P Name="Src">45#out:1</P>
+    <P Name="Points">[22, 0]</P>
+    <Branch>
+      <P Name="ZOrder">81</P>
+      <P Name="Points">[0, 60]</P>
+      <P Name="Dst">42#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">80</P>
+      <P Name="Points">[76, 0]</P>
+      <Branch>
+        <P Name="ZOrder">79</P>
+        <P Name="Points">[0, 99; -373, 0]</P>
+        <P Name="Dst">49#in:2</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">78</P>
+        <P Name="Points">[0, -40; 80, 0]</P>
+        <Branch>
+          <P Name="ZOrder">109</P>
+          <P Name="Points">[0, 100]</P>
+          <P Name="Dst">66#in:1</P>
+        </Branch>
+        <Branch>
+          <P Name="ZOrder">108</P>
+          <P Name="Dst">46#in:1</P>
+        </Branch>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">77</P>
+        <P Name="Dst">52#in:1</P>
+      </Branch>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">104</P>
+    <P Name="Src">57#out:1</P>
+    <P Name="Points">[22, 0]</P>
+    <Branch>
+      <P Name="ZOrder">103</P>
+      <P Name="Points">[0, 60]</P>
+      <P Name="Dst">54#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">102</P>
+      <P Name="Points">[76, 0]</P>
+      <Branch>
+        <P Name="ZOrder">101</P>
+        <P Name="Points">[0, 99; -373, 0]</P>
+        <P Name="Dst">61#in:2</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">100</P>
+        <P Name="Points">[0, -40; 70, 0]</P>
+        <Branch>
+          <P Name="ZOrder">112</P>
+          <P Name="Points">[0, 110]</P>
+          <P Name="Dst">67#in:1</P>
+        </Branch>
+        <Branch>
+          <P Name="ZOrder">111</P>
+          <P Name="Dst">58#in:1</P>
+        </Branch>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">99</P>
+        <P Name="Dst">64#in:1</P>
+      </Branch>
+    </Branch>
+  </Line>
+</System>

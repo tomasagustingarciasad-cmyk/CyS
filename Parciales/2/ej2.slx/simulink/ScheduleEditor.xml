@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sltp_editor version="1.1" packageUris="http://schema.mathworks.com/mf0/DiagramEditor/R2019a_20181107 http://schema.mathworks.com/mf0/SltpSyntax/R2023a_202207220222">
+  <sltp.mm.syntax.Context type="sltp.mm.syntax.Context" uuid="3bc6494c-0943-48af-82ee-575fcc503e5e">
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="a449243d-6f5c-4255-8df4-f3349a5a705d">
+      <dataName>portOutport</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="ed477481-4991-4b04-88f7-465dbdeeeba4">
+      <dataName>portVelocidad</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="25dcf646-690b-4727-84c3-90a79b17a37e">
+      <dataName>portVelocidad1</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="befc32c7-68bf-42fb-8946-0df43e9b45c9">
+      <dataName>portVelocidad2</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <rootGraph type="sltp.mm.syntax.Graph" uuid="e76d6954-ede4-4db3-b2ce-0530b1bcca81">
+      <children type="sltp.mm.syntax.Node" uuid="417c2802-3d99-4f2b-857c-7ec7940385e0">
+        <priority>40</priority>
+        <rates type="sltp.mm.syntax.RateData">
+          <color>#000000</color>
+          <hasBlocks>true</hasBlocks>
+          <rate>0</rate>
+          <title>Cont</title>
+        </rates>
+        <rates type="sltp.mm.syntax.RateData">
+          <color>#808080</color>
+          <rate>[0, 1]</rate>
+          <title>FiM</title>
+        </rates>
+        <title>Cont</title>
+        <type>base</type>
+        <diagramElement type="diagram.editor.model.Entity" uuid="f24c0550-4416-4878-8afc-92a4a69de3d0"/>
+        <subgraph type="sltp.mm.syntax.Graph" uuid="daa89ae0-5fce-445b-8260-ec66e85905fb">
+          <title>Cont</title>
+          <diagramElement type="diagram.editor.model.Diagram" uuid="902ddc76-2e74-4676-b9d0-698022004be0"/>
+        </subgraph>
+      </children>
+      <title>Default</title>
+      <diagramElement type="diagram.editor.model.Diagram" uuid="e2860f81-b6af-48e2-92fc-12e61e1e719c"/>
+    </rootGraph>
+  </sltp.mm.syntax.Context>
+  <diagram.editor.model.Diagram type="diagram.editor.model.Diagram" uuid="e2860f81-b6af-48e2-92fc-12e61e1e719c">
+    <entities type="diagram.editor.model.Entity" uuid="f24c0550-4416-4878-8afc-92a4a69de3d0">
+      <position>0,0</position>
+      <size>0,0,0,0</size>
+      <syntaxElement type="sltp.mm.syntax.Node" uuid="417c2802-3d99-4f2b-857c-7ec7940385e0"/>
+      <title>Cont</title>
+      <type>base</type>
+      <subDiagram type="diagram.editor.model.Diagram" uuid="902ddc76-2e74-4676-b9d0-698022004be0">
+        <position>0,0</position>
+        <syntaxElement type="sltp.mm.syntax.Graph" uuid="daa89ae0-5fce-445b-8260-ec66e85905fb"/>
+        <title>Cont</title>
+        <type>graph.Graph</type>
+      </subDiagram>
+    </entities>
+    <syntaxElement type="sltp.mm.syntax.Graph" uuid="e76d6954-ede4-4db3-b2ce-0530b1bcca81"/>
+    <title>Default</title>
+    <type>graph.Graph</type>
+  </diagram.editor.model.Diagram>
+</sltp_editor>
