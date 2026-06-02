@@ -13,6 +13,7 @@ polos_deseados = [polo_real, polos_complejos(1), polos_complejos(2)];
 % 3. Cálculo de la matriz K mediante Ackermann
 
 disp("La matriz K queda definida con los coeficientes:")
+% K es la matriz tal que |sI-(A-KB)| = 0
 K = acker(A, B, polos_deseados);
 disp(K);
 
